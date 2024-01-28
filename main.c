@@ -16,7 +16,7 @@ int main() {
     printf("\nThe Palindromes are:");
     for (int i = x; i <= y; ++i) {
         if(isPalindrome(i)){
-            printf( " %d ",i);
+            printf( " %d",i);
         }
     }
 
@@ -33,5 +33,6 @@ int main() {
             printf( " %d",i);
         }
     }
+    printf("\n \n");
     return 0;
 }
