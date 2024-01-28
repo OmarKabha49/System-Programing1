@@ -18,10 +18,10 @@ $(TARGET1): $(SOURCES1) $(HEADERS) $(LIBREC)
 	$(CC) $(CFLAGS) -o $(TARGET1) $(SOURCES1) -L. -lclassrec
 
 $(TARGET2): $(SOURCES2) $(HEADERS) $(LIBLOOP_SO)
-	$(CC) $(CFLAGS) -o $(TARGET2) $(SOURCES2) -L. -lclassloops
+	$(CC) $(CFLAGS) -fPIC -o $(TARGET2) $(SOURCES2) -L. -lclassloops
 
 $(TARGET3): $(SOURCES3) $(HEADERS) $(LIBREC_SO)
-	$(CC) $(CFLAGS) -o $(TARGET3) $(SOURCES3) -L. -lclassrec
+	$(CC) $(CFLAGS) -fPIC -o $(TARGET3) $(SOURCES3) -L. -lclassrec
 
 recursives: $(LIBREC)
 recursived: $(LIBREC_SO)
