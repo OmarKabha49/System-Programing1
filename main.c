@@ -33,6 +33,6 @@ int main() {
             printf( " %d",i);
         }
     }
-    printf("\n \n");
+    printf("\n");
     return 0;
 }
