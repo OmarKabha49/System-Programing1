@@ -12,7 +12,7 @@ SOURCES2 =  main.c basicClassification.c advancedClassificationLoop.c
 SOURCES3 =  main.c basicClassification.c advancedClassificationRecursion.c
 HEADERS = NumClass.h
 
-all: $(TARGET1) $(TARGET2) $(TARGET3)
+all: $(TARGET1) $(TARGET2) $(TARGET3) loops recursives
 
 $(TARGET1): $(SOURCES1) $(HEADERS) $(LIBREC)
 	$(CC) $(CFLAGS) -o $(TARGET1) $(SOURCES1) -L. -lclassrec
